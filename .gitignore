@@ -1,0 +1,14 @@
+.venv/
+node_modules/
+dist/
+frontend-dist/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+.vercel/
+.env
+.env.*
+!.env.example
+

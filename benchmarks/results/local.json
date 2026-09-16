@@ -1,0 +1,79 @@
+{
+  "kind": "measured-local-sdk-overhead",
+  "timestamp": "2026-09-13T16:58:34.321616+00:00",
+  "python": "3.12.14",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "processor": "AMD64 Family 23 Model 104 Stepping 1, AuthenticAMD",
+  "iterations": 10000,
+  "repeats": 7,
+  "sdk_version": "0.1.0",
+  "exporter": "bounded InMemoryExporter(256), oldest-first eviction",
+  "unit": "microseconds_per_call",
+  "median": {
+    "sync_plain_us": 0.05407,
+    "sync_observed_us": 9.99648,
+    "async_plain_us": 0.1207,
+    "async_observed_us": 9.98282,
+    "sync_overhead_us": 9.94221,
+    "async_overhead_us": 9.85744
+  },
+  "samples": [
+    {
+      "sync_plain_us": 0.053130000000000004,
+      "sync_observed_us": 9.718020000000001,
+      "async_plain_us": 0.1207,
+      "async_observed_us": 9.97814,
+      "sync_overhead_us": 9.664890000000002,
+      "async_overhead_us": 9.85744
+    },
+    {
+      "sync_plain_us": 0.05256,
+      "sync_observed_us": 10.211870000000001,
+      "async_plain_us": 0.11882,
+      "async_observed_us": 10.182360000000001,
+      "sync_overhead_us": 10.159310000000001,
+      "async_overhead_us": 10.063540000000001
+    },
+    {
+      "sync_plain_us": 0.05407,
+      "sync_observed_us": 11.63631,
+      "async_plain_us": 0.12143999999999999,
+      "async_observed_us": 10.31064,
+      "sync_overhead_us": 11.58224,
+      "async_overhead_us": 10.1892
+    },
+    {
+      "sync_plain_us": 0.05336,
+      "sync_observed_us": 9.451360000000001,
+      "async_plain_us": 0.11982999999999999,
+      "async_observed_us": 9.94296,
+      "sync_overhead_us": 9.398000000000001,
+      "async_overhead_us": 9.823129999999999
+    },
+    {
+      "sync_plain_us": 0.054270000000000006,
+      "sync_observed_us": 9.99648,
+      "async_plain_us": 0.12137,
+      "async_observed_us": 10.28563,
+      "sync_overhead_us": 9.94221,
+      "async_overhead_us": 10.164259999999999
+    },
+    {
+      "sync_plain_us": 0.055420000000000004,
+      "sync_observed_us": 10.056,
+      "async_plain_us": 0.12795,
+      "async_observed_us": 9.98282,
+      "sync_overhead_us": 10.00058,
+      "async_overhead_us": 9.85487
+    },
+    {
+      "sync_plain_us": 0.06378,
+      "sync_observed_us": 9.63373,
+      "async_plain_us": 0.11973,
+      "async_observed_us": 9.847850000000001,
+      "sync_overhead_us": 9.56995,
+      "async_overhead_us": 9.72812
+    }
+  ],
+  "limitations": "Single machine; no model or network calls; includes buffer export; does not establish production latency or throughput."
+}
