@@ -4,7 +4,9 @@
 
 Capability **01 / 09** in the AI ReleaseGuard portfolio. This repository is independently installable and deployable; it does not require the other eight projects.
 
-**Status:** v0.1.0 release candidate. See [publication status](docs/RELEASE.md). A public GitHub release and Vercel deployment are not yet claimed.
+**Status:** v0.1.0 release candidate. See [publication status](docs/RELEASE.md) for the current GitHub release and Vercel deployment state.
+
+![The ReleaseGuard trace explorer showing two isolated concurrent traces](docs/assets/trace-explorer.png)
 
 ## What this demonstrates
 
@@ -129,7 +131,7 @@ In the browser, inspect individual spans, switch to Raw JSON, download the repor
 .\.venv\Scripts\python.exe benchmarks/overhead.py --iterations 10000 --repeats 7
 ```
 
-This writes [local benchmark data](benchmarks/results/local.json) with per-batch results, environment and median added microseconds. It measures real SDK work with a bounded exporter; it does not measure an LLM or network call. See [methodology and limitations](benchmarks/README.md).
+This writes [local benchmark data](benchmarks/results/local.json) with per-batch results, environment and median added microseconds. On the recorded Windows/Python 3.12 run, the medians were **9.94 μs sync** and **9.86 μs async** added per no-op call. It measures real SDK work with a bounded exporter; it does not measure an LLM or network call. See [methodology and limitations](benchmarks/README.md).
 
 ## Architecture and boundaries
 

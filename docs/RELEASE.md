@@ -1,25 +1,28 @@
 # Publication checklist
 
-Current status: local implementation; no GitHub repository, tag, or Vercel URL
-has been published from this workspace yet. Do not advertise a live deployment
-until its URL has been checked.
+Current status: source is present on the public GitHub repository's main branch.
+The v0.1.0 tag and GitHub Release have not yet been created. No verified Vercel
+URL is available. Do not advertise a live deployment until its URL is checked.
 
 ## Before publication
 
-- [ ] Python tests and Ruff pass.
-- [ ] React typecheck and production build pass.
-- [ ] SDK wheel and source distribution build.
-- [ ] Built wheel installs and imports independently.
-- [ ] Example and real local overhead benchmark run.
-- [ ] Browser checks cover success, injected failure, concurrent roots and export.
-- [ ] GitHub owner and repository visibility are confirmed.
+- [x] Python tests (28) and Ruff pass locally.
+- [x] React typecheck and production build pass locally.
+- [x] SDK wheel and source distribution build locally.
+- [x] Built wheel imports independently from its archive, outside source paths.
+- [x] Example and real local overhead benchmark run.
+- [x] Browser checks cover success, injected failure, concurrent roots and export.
+- [x] GitHub repository and main branch are reachable; visibility requires public page check.
+- [ ] CI passes on the final pushed commit.
+- [ ] v0.1.0 GitHub Release contains wheel, sdist and benchmark.
 - [ ] Vercel is connected to the standalone repository.
+- [ ] Public Vercel deployment passes browser and API smoke checks.
 
 ## GitHub
 
-Create an empty public repository named releaseguard-sdk. Push the contents of
-this folder as its root, excluding .venv, node_modules and ignored build outputs.
-Do not push the parent roadmap or other project folders.
+The repository already exists at https://github.com/KeyvanAghaie/releaseguard-sdk.
+Push the contents of this folder as its root, excluding .venv, node_modules and
+ignored build outputs. Do not push the parent roadmap or other project folders.
 
 Run CI on main before tagging. A v0.1.0 tag triggers the release workflow, which
 checks the version, reruns validation, builds distributions and uploads them
@@ -43,4 +46,3 @@ A local build alone does not prove the Vercel deployment passed.
 Then add the verified URL to the GitHub About field and README. If a release
 fails verification, do not silently move an existing tag: fix and publish a
 new patch version.
-
