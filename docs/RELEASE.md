@@ -1,8 +1,8 @@
 # Publication checklist
 
 Current status: source is present on the public GitHub repository's main branch.
-The v0.1.0 tag and GitHub Release have not yet been created. No verified Vercel
-URL is available. Do not advertise a live deployment until its URL is checked.
+The v0.1.0 tag and GitHub Release are published. No verified Vercel URL is
+available yet. Do not advertise a live deployment until its URL is checked.
 
 ## Before publication
 
@@ -13,8 +13,8 @@ URL is available. Do not advertise a live deployment until its URL is checked.
 - [x] Example and real local overhead benchmark run.
 - [x] Browser checks cover success, injected failure, concurrent roots and export.
 - [x] GitHub repository and main branch are reachable; visibility requires public page check.
-- [ ] CI passes on the final pushed commit.
-- [ ] v0.1.0 GitHub Release contains wheel, sdist and benchmark.
+- [x] CI passes on the final pushed commit.
+- [x] v0.1.0 GitHub Release contains wheel, sdist and benchmark.
 - [ ] Vercel is connected to the standalone repository.
 - [ ] Public Vercel deployment passes browser and API smoke checks.
 
@@ -24,9 +24,10 @@ The repository already exists at https://github.com/KeyvanAghaie/releaseguard-sd
 Push the contents of this folder as its root, excluding .venv, node_modules and
 ignored build outputs. Do not push the parent roadmap or other project folders.
 
-Run CI on main before tagging. A v0.1.0 tag triggers the release workflow, which
-checks the version, reruns validation, builds distributions and uploads them
-with the benchmark. PyPI is not required for this release.
+CI passed on main and on tag `v0.1.0`. The release workflow checked the version,
+reran validation, built distributions and uploaded them with the benchmark.
+See the [v0.1.0 release](https://github.com/KeyvanAghaie/ReleaseGuard-SDK/releases/tag/v0.1.0).
+PyPI is not required for this release.
 
 ## Vercel
 
